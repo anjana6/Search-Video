@@ -2,7 +2,10 @@ import React from 'react';
 
 const VideoItem = props =>{
     return (
-        <div>Vedio Item</div>
+        <div>
+            <img src={props.video.snippet.thumbnails.medium.url}/>
+            {props.video.snippet.title}
+        </div>
     );
 
     
