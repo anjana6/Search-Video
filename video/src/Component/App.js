@@ -30,24 +30,8 @@ class App extends React.Component{
             
             );
     };
-
-    // onTermSubmit = async(term) => {
-    //     console.log(term);
-    //     try {
-    //        const res = await youtube.get('/search',{
-    //             params:{
-    //                 // part: 'snippet',
-    //                 q: term
-    //             }
-    //         });
-    //         console.log(res)
-    //     } catch (err) {
-    //         console.log(err.message)
-    //     }
-    // }; 
     onVideoSelect =  video =>{
         this.setState({selectedVideo:video})
-        console.log('from the App!',video);
     }
 
     render(){
